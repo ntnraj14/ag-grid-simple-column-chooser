@@ -1,6 +1,6 @@
 import { Component, HostListener, ViewChild } from '@angular/core';
 import { AgGridAngular } from 'ag-grid-angular/public-api';
-import { ColDef, GridOptions } from 'ag-grid-community'; // Column Definition Type Interface
+import { ColDef } from 'ag-grid-community'; // Column Definition Type Interface
 
 @Component({
   selector: 'app-root',
@@ -22,9 +22,6 @@ export class AppComponent {
   
   title = 'ag-grid-column-chooser';
   hideTableColumnChooser = true;
-  gridOptions: GridOptions = {
-    pagination: true
-  }
 
     // Row Data: The data to be displayed.
     rowData = [
